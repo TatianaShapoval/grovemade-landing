@@ -1,0 +1,71 @@
+@import './vars';
+@import './fonts';
+@import './global';
+@import './libs';
+
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        padding-right: 50px;
+        cursor: pointer;
+        &:hover{
+            color: darkred;
+            
+        }
+    }
+}
+
+.menu{
+    display: flex;
+    &__item{
+        padding: 0 12px;
+        &:hover{
+            color:darkred;
+            
+        }
+    } 
+    &__logo{
+        margin: 0 auto;
+    }
+
+}
+.top{
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    &__content{
+        padding: 193px 0;
+        color: #fff;
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__text{
+        margin-bottom: 25px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            color: blanchedalmond;
+            
+        }
+    }
+
+}
+.title{
+    font-size: 43px;
+    line-height: 46px;
+    font-weight: 400;
+}
+    
