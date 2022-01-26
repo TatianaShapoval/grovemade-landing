@@ -35,12 +35,79 @@
     }
 
 }
+.footer{
+    background: #F9F9F9;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    &__inner{
+        display: flex;
+    }
+    &__menu{
+        font-size: 22px;
+        line-height: 37px;
+    }
+    &__signup{
+        width: 345px;
+        margin-left: 30px;
+    }
+    &__signup-title{
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+    &__signup-text{
+        color: #A0A0A0;
+        margin-bottom: 60px;
+    }
+    &__signup-input{
+        background-color: transparent;
+        border: none;
+        border-bottom:  solid 1px #000;
+        width: 199px;
+    }
+    &__btn{
+        background-color: #000;
+        border: none;
+        color: #fff;
+        height: 82px;
+        width: 82px;
+        padding: 20px;
+        position: relative;
+        top: -339px;
+        right: 0px;
+        left: 1255px;
+        bottom: 0;
+        cursor: pointer;
+    }
+    &__copyright{
+       position: relative;
+       left: 800px;
+       color: #707A7F;
+       width: 580px;
+       
+        
+    }
+    &__copyright-list{
+        display: block;
+        
+    }
+    &__copyright-item{
+        display: inline-block;
+        align-items: flex-end;
+        padding-left: 20px;
+        &:hover{
+            color: #000;
+           }
+    }
+
+}
 .top{
     background-image: url('../images/bg1.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     text-align: center;
+    max-height: 504px;
     &__content{
         padding: 193px 0;
         color: #fff;
