@@ -122,17 +122,140 @@
         background-color: transparent;
         border: none;
         color: #fff;
+        letter-spacing: 1.4px;
         cursor: pointer;
         &:hover{
             color: blanchedalmond;
             
         }
     }
+}
+.workspace{
+    margin-bottom: 65px;
+    &__info{
+        padding: 90px 0;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__text{
+        margin-bottom: 30px;
+        color: #A0A0A0;
+        line-height: 24px;
+    }
+    &__link{
+        line-height: 24px;
+        letter-spacing: 1.4px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-img{
+        margin-bottom: 50px;
+    }
+    &__item-title{
+        text-align: center;
+        font-size: 27px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    &__item-link{
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+}
+.products{
+    padding-top: 50px;
+    &__title{
+        text-align: center;
+        font-size: 33px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+    &__text{
+        font-size: 15px;
+        color: #A0A0A0;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    &__slider{
+        padding-top: 50px;
+        margin-bottom: 65px;
+    }
+    &__slider-img{
+        margin-bottom: 25px;
+    }
+    &__slider-title,
+    &__slider-price{
+        color: #A0A0A0;
+        
+        letter-spacing: 0.7px;
+        font-weight: 400;
+    }
+    &__slider-title{
+        margin-bottom: 15px;
+    }
+    &__slider-price{
+        margin-bottom: 30px;
+    }
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-580px);
 
 }
-.title{
-    font-size: 43px;
-    line-height: 46px;
-    font-weight: 400;
+.slick-dots li{
+    margin: 0 10px;
+    
+    
 }
+.slick-dots button{
+    padding: 0;
+    border-radius: none;
+    font-size: 0;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    color: #000;
+    border: none;
+}
+.inspiration{
+    background-image: url('../images/inspiration-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    max-height: 504px;
+    &__content{
+        padding: 193px 0;
+        color: #fff;
+    }
+    &__title{
+        margin-bottom: 15px;
+        font-size: 66px;
+        line-height: 70px;
+    }
+    &__text{
+        margin-bottom: 25px;
+        letter-spacing: 0.8px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        letter-spacing: 1.4px;
+        cursor: pointer;
+        &:hover{
+            color: blanchedalmond;
+            
+        }
+    }
+}
+
     
