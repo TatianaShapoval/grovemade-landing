@@ -75,7 +75,7 @@
         position: relative;
         top: -339px;
         right: 0px;
-        left: 1255px;
+        left: 1258px;
         bottom: 0;
         cursor: pointer;
     }
@@ -232,6 +232,7 @@
     background-size: cover;
     text-align: center;
     max-height: 504px;
+    margin-bottom: 40px;
     &__content{
         padding: 193px 0;
         color: #fff;
@@ -255,6 +256,89 @@
             color: blanchedalmond;
             
         }
+    }
+}
+.history{
+    padding: 50px 0;
+    &__content{
+        text-align: center;        
+    }
+    
+    &__title{
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    &__text{
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: #A0A0A0;
+        letter-spacing: 0.8px;
+        margin-bottom: 40px;
+        width: 777px;
+    }
+    &__img{
+        display: inline-block;
+    }
+}
+.team{
+    padding: 50px 0;
+    text-align: center;
+    &__title{
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+        color: #A0A0A0;
+        margin-bottom: 80px;
+        width: 777px;
+        display: inline-block;
+    }
+    &__photo{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 24px;
+    }
+}
+.join{
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    &__title{
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom: 40px;
+
+    }
+    &__link{
+        letter-spacing: 1.4px;  
+    }
+}
+
+
+.tagline{
+    padding: 117px 0 117px 0;
+    background-color: #9AA8B1;
+    text-align: center;
+    color: #fff;
+    width: 1340px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    &__logo{
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__text{
+        letter-spacing: 0.8px;
     }
 }
 
