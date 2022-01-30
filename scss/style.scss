@@ -1,18 +1,17 @@
-@import './vars';
-@import './fonts';
-@import './global';
-@import './libs';
+
 
 .header{
     &__inner{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        padding: 25px 0;
+        align-items: center;
+        height: 75px;
     }
     &__btn{
         background-color: transparent;
         border: none;
-        padding-right: 50px;
+        padding-right: 30px;
         cursor: pointer;
         &:hover{
             color: darkred;
@@ -20,19 +19,25 @@
         }
     }
 }
-
+.logo{
+    margin: 0px 80px 0px 0px;
+}
 .menu{
-    display: flex;
-    &__item{
+    &__btn {
+        display: none;
+    }
+    &__list{
+        display: flex;
         padding: 0 12px;
         &:hover{
             color:darkred;
             
         }
     } 
-    &__logo{
-        margin: 0 auto;
+    &__list-item{
+        padding: 0 20px;
     }
+    
 
 }
 .footer{
@@ -131,9 +136,9 @@
     }
 }
 .workspace{
-    margin-bottom: 65px;
+    padding: 30px 0;
     &__info{
-        padding: 90px 0;
+        padding: 70px 0;
         text-align: center;
     }
     &__title{
@@ -152,6 +157,10 @@
         display: flex;
         justify-content: space-between;
     }
+    &__item{
+        max-width: 100%;
+        padding: 0 15px;
+    }
     &__item-img{
         margin-bottom: 50px;
     }
@@ -168,7 +177,7 @@
     }
 }
 .products{
-    padding-top: 50px;
+    padding: 40px 0;
     &__title{
         text-align: center;
         font-size: 33px;
@@ -183,31 +192,38 @@
 
     }
     &__slider{
-        padding-top: 50px;
-        margin-bottom: 65px;
+        padding: 50px 0;
+        position: relative;
+    }
+    &__slider-item{
+        max-width: 100%;
+        padding: 10px;
+        
     }
     &__slider-img{
-        margin-bottom: 25px;
+        width: 100%;
+        margin: 0 auto;
     }
     &__slider-title,
     &__slider-price{
         color: #A0A0A0;
-        
+        margin: 0 auto;        
         letter-spacing: 0.7px;
         font-weight: 400;
     }
     &__slider-title{
-        margin-bottom: 15px;
+        padding: 15px 0;
     }
-    &__slider-price{
-        margin-bottom: 30px;
-    }
+   
 }
 .slick-dots{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-580px);
+    position: absolute;
+    top: 0;
+    transform: translateX(50%);
+    right: 50%;
 
 }
 .slick-dots li{
@@ -260,8 +276,10 @@
 }
 .history{
     padding: 50px 0;
+   
     &__content{
-        text-align: center;        
+        text-align: center; 
+           
     }
     
     &__title{
@@ -277,15 +295,15 @@
         color: #A0A0A0;
         letter-spacing: 0.8px;
         margin-bottom: 40px;
-        width: 777px;
+        max-width: 777px;
     }
-    &__img{
-        display: inline-block;
-    }
+    
 }
 .team{
+    
     padding: 50px 0;
     text-align: center;
+   
     &__title{
         font-size: 34px;
         line-height: 36px;
@@ -297,7 +315,7 @@
         letter-spacing: 0.8px;
         color: #A0A0A0;
         margin-bottom: 80px;
-        width: 777px;
+        max-width: 777px;
         display: inline-block;
     }
     &__photo{
@@ -309,7 +327,6 @@
 .join{
     text-align: center;
     padding: 30px 0;
-    margin-bottom: 30px;
     &__title{
         font-size: 34px;
         line-height: 36px;
@@ -327,7 +344,7 @@
     background-color: #9AA8B1;
     text-align: center;
     color: #fff;
-    width: 1340px;
+    max-width: 1340px;
     margin: 0 auto;
     margin-bottom: 40px;
     &__logo{
@@ -343,3 +360,8 @@
 }
 
     
+@import './vars';
+@import './fonts';
+@import './global';
+@import './libs';
+@import './media';
