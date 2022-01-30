@@ -40,10 +40,13 @@
     
 
 }
+.menu-adaptive{
+    display: none;
+}
 .footer{
     background: #F9F9F9;
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding: 80px 0;
+    
     &__inner{
         display: flex;
     }
@@ -52,7 +55,7 @@
         line-height: 37px;
     }
     &__signup{
-        width: 345px;
+        max-width: 350px;
         margin-left: 30px;
     }
     &__signup-title{
@@ -70,6 +73,9 @@
         border-bottom:  solid 1px #000;
         width: 199px;
     }
+    &__content{
+        position: relative;
+    }
     &__btn{
         background-color: #000;
         border: none;
@@ -77,29 +83,27 @@
         height: 82px;
         width: 82px;
         padding: 20px;
-        position: relative;
-        top: -339px;
-        right: 0px;
-        left: 1258px;
-        bottom: 0;
-        cursor: pointer;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+        right: 80px;
     }
     &__copyright{
-       position: relative;
-       left: 800px;
-       color: #707A7F;
-       width: 580px;
        
+       color: #707A7F;
+      
         
     }
     &__copyright-list{
-        display: block;
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        text-align: right;
     }
     &__copyright-item{
-        display: inline-block;
-        align-items: flex-end;
-        padding-left: 20px;
+        padding: 30px 0 0px 20px;
+        
+        
         &:hover{
             color: #000;
            }

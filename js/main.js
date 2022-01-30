@@ -32,4 +32,8 @@
               }
           ]
     });
+
+    $(".menu__btn").on("click", function () {
+        $(".menu-adaptive").toggleClass("menu-adaptive--active");
+      });
   

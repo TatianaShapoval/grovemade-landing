@@ -139,7 +139,35 @@
             grid-gap: 10px;
         }
     }
-    
+    .footer{
+        padding: 60px 0;
+        &__menu{
+            font-size: 15px;
+            line-height: 27px;
+        }
+        &__signup {
+            max-width: 270px;
+            margin-left: 25px;
+        }
+        &__signup-title {
+            font-size: 19px;
+            line-height: 21px;
+            margin-bottom: 9px;
+        }
+        &__signup-text {
+            margin-bottom: 26px;
+        }
+        &__copyright-item{
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &__btn{
+            height: 62px;
+            width: 62px;
+            padding: 16px;
+            right: 62px;
+        }
+    }
 }
 @media (max-width: 600px) {
     .header{
@@ -155,6 +183,7 @@
     .menu{
         display: none;
         &__btn{
+            z-index: 10;
             display: block;
             background-color: transparent;
             border: none;
@@ -185,6 +214,27 @@
             margin-bottom: 4px;
         }
     }
+    .menu-adaptive{
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        opacity: 0.8;
+        width: 100%;
+        height: 120px;
+        max-width: 90px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 60px 0 0px;
+        transform: translateY(-200%);
+        
+        &__item{
+            padding: 4px 0px 4px 24px;
+        }
+    }
+    .menu-adaptive.menu-adaptive--active {
+        transform: translateY(0);
+      }
     .logo{
         margin: 0 auto;    
     }
@@ -219,7 +269,36 @@
         }
     }
 }
-
+@media (max-width: 540px) {
+    .footer{
+        &__menu-list{
+            margin-bottom: 20px;
+        }
+        &__signup {
+            max-width: 230px;
+            margin-left: 15px;
+        }
+        &__signup-text {
+            font-size: 11px;
+        }
+        &__copyright-list{
+            display: block;
+            text-align: left;
+            
+        }
+        &__copyright-item{
+            padding: 0;
+            line-height: 23px;
+        }
+        &__btn{
+            top: 100%;
+        }
+        &__signup-input {
+            
+            width: 150px;
+        }
+    }
+}
 @media (max-width: 375px) {
     .header{
         &__inner{
